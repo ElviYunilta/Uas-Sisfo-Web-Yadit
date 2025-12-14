@@ -1,0 +1,111 @@
+/* css/style.css */
+
+/* Warna tema otomotif: hitam + merah aksen */
+:root {
+  --warna-primer: #0d1b2a;
+  --warna-sekunder: #1b263b;
+  --warna-aksen: #d90429;
+  --warna-terang: #e0e1dd;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Brand & sidebar */
+.brand-link {
+  background-color: var(--warna-primer) !important;
+}
+.brand-link .brand-text {
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+.sidebar-dark-primary {
+  background-color: var(--warna-sekunder) !important;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link:hover {
+  background-color: #2a3b5c;
+  color: #fff;
+}
+
+/* Card mobil */
+.card-mobil {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card-mobil:hover {
+  transform: translateY(-5px);
+}
+.card-mobil .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-mobil .card-body {
+  padding: 1.25rem;
+}
+.harga-mobil {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--warna-aksen);
+}
+.badge-stok {
+  font-size: 0.75rem;
+  padding: 0.35em 0.6em;
+}
+.badge-tersedia { background-color: #28a745 !important; }
+.badge-habis { background-color: #6c757d !important; }
+
+/* Info box otomotif */
+.info-box-otomotif {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1);
+}
+.info-box-otomotif .info-box-icon {
+  background-color: var(--warna-primer) !important;
+  color: #fff !important;
+}
+
+/* Tombol aksi */
+.btn-detail {
+  background-color: var(--warna-primer);
+  border-color: var(--warna-primer);
+}
+.btn-detail:hover {
+  background-color: #1a3a5f;
+  border-color: #152e4a;
+}
+
+.btn-inquiry {
+  background-color: var(--warna-aksen);
+  border-color: var(--warna-aksen);
+}
+.btn-inquiry:hover {
+  background-color: #b00320;
+  border-color: #9a031e;
+}
+
+/* Form kontak */
+.form-control {
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+}
+.form-control:focus {
+  border-color: var(--warna-aksen);
+  box-shadow: 0 0 0 0.2rem rgba(217, 4, 41, 0.2);
+}
+
+/* Footer */
+.footer {
+  background: #0d1b2a;
+  color: #adb5bd;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  border-top: 3px solid var(--warna-aksen);
+}
